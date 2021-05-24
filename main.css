@@ -1,6 +1,18 @@
-//Basic Body Style
+//Page Root
+:root {
+  --green: #00FF00;
+  --white: #ffffff;
+  --black: #000000;
+}
+
+//Body Style
+* {
+  color: var(--fontColor);
+  font-family: helvetica;
+}
+
 body {
-    font-family: monospace;
+    background: var(--bg);
 }
 
 ul {
@@ -16,12 +28,12 @@ li {
   list-style: square;
 }
 
-#msg {
-  font-family: monospace;
-}
-
 //Themes
 .light-theme {
   color: #000000;
   background: #00FF00;
+}
+.dark-theme {
+  --bg: var(--black);
+  --fontColor: var(--green);
 }
